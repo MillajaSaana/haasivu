@@ -38,9 +38,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-4 {
 .logo-and {
     color: #5a4f45; /* tai mikä väri haluatte &-merkille */
 }
-h4 {
-    font-family: "Playwrite NZ Basic", cursive;
-}
+
 
 /*** Spinner Start ***/
 #spinner {
