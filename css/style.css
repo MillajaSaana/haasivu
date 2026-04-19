@@ -161,7 +161,7 @@ h1, h2, h3 {
 
 .navbar .navbar-nav .nav-link {
     padding: 10px 15px;
-    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Playfair Display', serif !important;
     font-weight: 600;
     font-size: 16px;
     transition: .5s;
