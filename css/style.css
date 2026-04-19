@@ -1,3 +1,20 @@
+#password-submit {
+    background-color: #9AC5EC;
+    border: 1px solid #9AC5EC;
+    color: white;
+    padding: 10px 26px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.25s ease;
+}
+
+#password-submit:hover {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    color: white !important;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
 
 h1, h2, h3, h4, h5, h6, .display-1, .display-4 {
     font-family: 'Playfair Display', serif !important;
