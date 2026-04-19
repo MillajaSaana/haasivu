@@ -491,32 +491,6 @@ h1, h2, h3, h4, h5, h6 {
 /*** Team End ***/
 
 
-@media (max-width: 992px) {
-    .footer .text-start,
-    .footer .text-center,
-    .footer .text-end {
-        text-align: center !important;
-    }
-}
-.laskuri-tausta {
-    background: #ffffff url('img/tausta.png') repeat center center;
-    background-size: 420px; /* isommat kukat */
-    padding: 60px 0;
-    border-radius: 16px;
-}
-
-/* Laskurin numerot */
-.countdown-box div {
-    color: #9AC5EC; /* vaaleansininen */
-    font-weight: 600;
-}
-
-/* Laskurin tekstit (Days, Hours, Mins, Secs) */
-.countdown-box span {
-    color: #9AAB7D; /* vihertävä */
-    font-size: 0.8em;
-    letter-spacing: 1px;
-}
 /* Laskurin valkoinen laatikko mobiiliin */
 @media (max-width: 576px) {
 
@@ -534,29 +508,32 @@ h1, h2, h3, h4, h5, h6 {
         letter-spacing: 1px !important;
     }
 
-    /* Countdown numerot pienemmiksi ja kahteen riviin */
+    /* Countdown kahteen riviin */
     .wedding-date .d-flex {
         flex-wrap: wrap;
         gap: 12px;
         justify-content: center;
     }
 
+    /* Jokainen boksi täsmälleen saman levyinen */
     .wedding-date .d-flex > div {
-        width: 45%;
+        width: 48%;          /* tärkein korjaus */
         text-align: center;
-        font-size: 1.2rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    /* Numerot */
     .wedding-date .d-flex > div div {
         font-size: 1.6rem !important;
         font-weight: 600;
+        line-height: 1;
     }
-      /* Jokainen boksi saman levyinen */
-    .wedding-date .d-flex > div {
-        width: 45%;
-        text-align: center;
+
+    /* Tekstit (Days, Hours, Mins, Secs) */
+    .wedding-date .d-flex > div span {
+        font-size: 0.8rem !important;
+        margin-top: 4px;
     }
 }
-
-
-
