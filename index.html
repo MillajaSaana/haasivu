@@ -571,6 +571,36 @@ sijaitsee noin 200 metrin päässä vihkikirkosta.</p>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navbarCollapse');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                new bootstrap.Collapse(navbarCollapse).toggle();
+            }
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById("password-input");
+    const button = document.getElementById("password-submit");
+
+    if (input && button) {
+        input.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                button.click();
+            }
+        });
+    }
+});
+</script>
+
     </body>
 
 </html>
