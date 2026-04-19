@@ -506,33 +506,35 @@ h1, h2, h3 {
 @media (max-width: 576px) {
 
     .wedding-date {
-        padding: 25px !important;
+        padding: 20px !important;
     }
 
     .wedding-date h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem !important;
+        line-height: 1.2;
     }
 
     .wedding-date-content h4 {
-        font-size: 1.2rem;
-        letter-spacing: 2px !important;
+        font-size: 1rem !important;
+        letter-spacing: 1px !important;
     }
 
-    /* Countdown numerot pienemmiksi */
-    .wedding-date .fs-2 {
-        font-size: 1.4rem !important;
-        margin: 0 10px;
-    }
-
-    /* Countdown rivit kahteen riviin */
+    /* Countdown numerot pienemmiksi ja kahteen riviin */
     .wedding-date .d-flex {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 12px;
+        justify-content: center;
     }
 
     .wedding-date .d-flex > div {
         width: 45%;
         text-align: center;
+        font-size: 1.2rem !important;
+    }
+
+    .wedding-date .d-flex > div div {
+        font-size: 1.6rem !important;
+        font-weight: 600;
     }
 }
 
