@@ -490,50 +490,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*** Team End ***/
 
-
-/* Laskurin valkoinen laatikko mobiiliin */
 @media (max-width: 576px) {
 
-    .wedding-date {
-        padding: 20px !important;
-    }
-
-    .wedding-date h1 {
-        font-size: 1.6rem !important;
-        line-height: 1.2;
-    }
-
-    .wedding-date-content h4 {
-        font-size: 1rem !important;
-        letter-spacing: 1px !important;
-    }
-
-    /* Countdown kahteen riviin */
     .wedding-date .d-flex {
         flex-wrap: wrap;
         gap: 12px;
         justify-content: center;
     }
 
-    /* Jokainen boksi täsmälleen saman levyinen */
     .wedding-date .d-flex > div {
-        width: 48%;          /* tärkein korjaus */
+        width: 48%;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    /* Numerot */
     .wedding-date .d-flex > div div {
         font-size: 1.6rem !important;
         font-weight: 600;
         line-height: 1;
     }
 
-    /* Tekstit (Days, Hours, Mins, Secs) */
     .wedding-date .d-flex > div span {
         font-size: 0.8rem !important;
         margin-top: 4px;
     }
 }
+
