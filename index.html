@@ -102,22 +102,34 @@
     to { transform: translateY(0); opacity: 1; }
 }
 </style>
-
 <script>
 function checkPassword() {
-    const correctPassword = "2026"; 
+    const correctPassword = "2026";
     const input = document.getElementById("password-input").value;
 
     if (input === correctPassword) {
         const overlay = document.getElementById("password-overlay");
+
+        // Häivytysanimaatio
         overlay.style.animation = "fadeOut 0.8s ease forwards";
-        setTimeout(() => overlay.style.display = "none", 800);
+
+        setTimeout(() => {
+            // Piilota overlay
+            overlay.style.display = "none";
+
+            // Salli scrollaaminen taas
+            document.body.classList.remove("no-scroll");
+
+            // Pakota sivu yläreunaan
+            window.scrollTo(0, 0);
+
+        }, 800);
+
     } else {
         document.getElementById("password-error").style.display = "block";
     }
 }
 </script>
-
 
         <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
