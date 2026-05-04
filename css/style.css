@@ -1,6 +1,9 @@
 #password-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh; /* tärkein korjaus */
     overflow: hidden;
-    height: 100vh !important;
 }
 #password-submit {
     background-color: #9AC5EC;
