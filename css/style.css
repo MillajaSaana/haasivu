@@ -5,6 +5,10 @@
     height: 100dvh; /* tärkein korjaus */
     overflow: hidden;
 }
+#password-overlay > div {
+    max-height: 90dvh;
+    overflow-y: auto;
+}
 #password-submit {
     background-color: #9AC5EC;
     border: 1px solid #9AC5EC;
