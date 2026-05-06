@@ -619,10 +619,8 @@ sijaitsee noin 200 metrin päässä vihkikirkosta.</p>
         <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
-
-<!-- Sulkee mobiilinavin kun linkkiä klikataan -->
+ <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
@@ -637,8 +635,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
-
-<!-- Enter-näppäin toimii salasanakentässä -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("password-input");
@@ -654,13 +650,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 </script>
-
-<!-- Smooth scroll + offset (KORJAA MOBIILIN NAVIGAATIO-ONGELMAN) -->
-<script>
+               <script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navbarCollapse = document.getElementById('navbarCollapse');
-    const OFFSET = 90; // voit säätää 80–120 välillä
+    const OFFSET = 90; // säädä tarvittaessa (esim. 100–120 jos mobiilinavi on korkeampi)
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -691,7 +685,9 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
+    </body>
 
+</html>
     </body>
 
 </html>
