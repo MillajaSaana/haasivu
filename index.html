@@ -619,17 +619,10 @@ sijaitsee noin 200 metrin päässä vihkikirkosta.</p>
         <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<!-- Sulkee mobiilinavin kun linkkiä klikataan -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
@@ -644,6 +637,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
+<!-- Enter-näppäin toimii salasanakentässä -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("password-input");
@@ -659,11 +654,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 </script>
-               <script>
+
+<!-- Smooth scroll + offset (KORJAA MOBIILIN NAVIGAATIO-ONGELMAN) -->
+<script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navbarCollapse = document.getElementById('navbarCollapse');
-    const OFFSET = 90; // säädä tarvittaessa (esim. 100–120 jos mobiilinavi on korkeampi)
+    const OFFSET = 90; // voit säätää 80–120 välillä
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -692,6 +689,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
 
 
     </body>
